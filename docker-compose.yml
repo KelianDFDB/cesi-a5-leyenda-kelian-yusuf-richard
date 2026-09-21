@@ -1,0 +1,8 @@
+services:
+  lab:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/workspace
+    command: jupyter notebook --notebook-dir=/workspace --ip=0.0.0.0 --no-browser --allow-root
