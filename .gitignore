@@ -1,0 +1,4 @@
+data_raw/
+data/
+results/*.keras
+.ipynb_checkpoints/
