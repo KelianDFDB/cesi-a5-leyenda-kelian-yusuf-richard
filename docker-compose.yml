@@ -6,7 +6,4 @@ services:
       - "6006:6006"
     volumes:
       - .:/workspace
-      - D:/Leyenda_data/data_raw:/workspace/data_raw
-      - D:/Leyenda_data/data:/workspace/data
-      - D:/Leyenda_data/results:/workspace/results
     command: jupyter notebook --notebook-dir=/workspace --ip=0.0.0.0 --no-browser --allow-root
