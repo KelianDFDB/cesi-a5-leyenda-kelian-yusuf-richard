@@ -1,5 +1,0 @@
-data_raw/
-data/
-results/*.keras
-results/logs/
-.ipynb_checkpoints/
