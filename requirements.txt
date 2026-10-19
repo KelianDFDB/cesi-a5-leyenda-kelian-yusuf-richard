@@ -4,3 +4,4 @@ pandas
 pillow
 imageio
 tensorboard
+nltk
