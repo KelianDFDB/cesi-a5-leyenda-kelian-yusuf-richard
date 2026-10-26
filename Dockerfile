@@ -13,4 +13,10 @@ RUN find /usr/local/lib/python3.11/site-packages/nvidia \
     test -s /etc/ld.so.conf.d/nvidia.conf && \
     ldconfig
 
+# Git pour VS Code (Dev Containers) ; safe.directory car le repo monté appartient à l'hôte et non à root
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends git openssh-client && \
+    rm -rf /var/lib/apt/lists/* && \
+    git config --system --add safe.directory /workspace
+
 EXPOSE 8888 6006
